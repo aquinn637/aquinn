@@ -28,6 +28,9 @@
 		},
 		"store-update": {
 			"tags": []
+		},
+		"ngx-translate-nativescript-loader": {
+			"tags": []
 		}
 	},
 	"workspaceLayout": {

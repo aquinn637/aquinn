@@ -10,6 +10,9 @@ export class HomeComponent {
 			name: 'inappbrowser',
 		},
 		{
+			name: 'ngx-translate-nativescript-loader',
+		},
+		{
 			name: 'store-update',
 		},
 	];

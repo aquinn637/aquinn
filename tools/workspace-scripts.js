@@ -77,6 +77,13 @@ module.exports = {
 					description: '@aquinn/store-update: Build',
 				},
 			},
+			// @aquinn/ngx-translate-nativescript-loader
+			'ngx-translate-nativescript-loader': {
+				build: {
+					script: 'nx run ngx-translate-nativescript-loader:build.all',
+					description: '@aquinn/ngx-translate-nativescript-loader: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -94,6 +101,10 @@ module.exports = {
 			'store-update': {
 				script: 'nx run store-update:focus',
 				description: 'Focus on @aquinn/store-update',
+			},
+			'ngx-translate-nativescript-loader': {
+				script: 'nx run ngx-translate-nativescript-loader:focus',
+				description: 'Focus on @aquinn/ngx-translate-nativescript-loader',
 			},
 			reset: {
 				script: 'nx run all:focus',

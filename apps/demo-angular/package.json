@@ -16,7 +16,8 @@
 		"rxjs": "file:../../node_modules/rxjs",
 		"zone.js": "file:../../node_modules/zone.js",
 		"@aquinn/inappbrowser": "file:../../dist/packages/inappbrowser",
-		"@aquinn/store-update": "file:../../dist/packages/store-update"
+		"@aquinn/store-update": "file:../../dist/packages/store-update",
+		"@aquinn/ngx-translate-nativescript-loader": "file:../../dist/packages/ngx-translate-nativescript-loader"
 	},
 	"devDependencies": {
 		"@angular/compiler-cli": "file:../../node_modules/@angular/compiler-cli",

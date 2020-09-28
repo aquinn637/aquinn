@@ -6,6 +6,7 @@ npm start
 ```
 
 - @aquinn/inappbrowser
+- @aquinn/ngx-translate-nativescript-loader
 - @aquinn/store-update
 
 # How to use?

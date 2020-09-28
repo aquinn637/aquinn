@@ -8,6 +8,7 @@
         <Button text="add a package first" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
 <Button text="inappbrowser" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
 <Button text="store-update" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="ngx-translate-nativescript-loader" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
       </StackLayout>
     </ScrollView>
   </StackLayout>
