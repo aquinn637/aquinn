@@ -6,7 +6,8 @@
 	"dependencies": {
 		"nativescript-theme-core": "file:../../node_modules/nativescript-theme-core",
 		"@nativescript/core": "file:../../node_modules/@nativescript/core",
-		"@aquinn/inappbrowser": "file:../../packages/inappbrowser"
+		"@aquinn/inappbrowser": "file:../../packages/inappbrowser",
+		"@aquinn/store-update": "file:../../packages/store-update"
 	},
 	"devDependencies": {
 		"@nativescript/android": "~7.0.0",

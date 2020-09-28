@@ -9,5 +9,8 @@ export class HomeComponent {
 		{
 			name: 'inappbrowser',
 		},
+		{
+			name: 'store-update',
+		},
 	];
 }

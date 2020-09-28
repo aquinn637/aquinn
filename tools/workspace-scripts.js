@@ -70,6 +70,13 @@ module.exports = {
 					description: '@aquinn/inappbrowser: Build',
 				},
 			},
+			// @aquinn/store-update
+			'store-update': {
+				build: {
+					script: 'nx run store-update:build.all',
+					description: '@aquinn/store-update: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -83,6 +90,10 @@ module.exports = {
 			inappbrowser: {
 				script: 'nx run inappbrowser:focus',
 				description: 'Focus on @aquinn/inappbrowser',
+			},
+			'store-update': {
+				script: 'nx run store-update:focus',
+				description: 'Focus on @aquinn/store-update',
 			},
 			reset: {
 				script: 'nx run all:focus',

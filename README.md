@@ -6,6 +6,7 @@ npm start
 ```
 
 - @aquinn/inappbrowser
+- @aquinn/store-update
 
 # How to use?
 

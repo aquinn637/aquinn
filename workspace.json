@@ -73,7 +73,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx run inappbrowser:build.all"],
+						"commands": ["nx run inappbrowser:build.all", "nx run store-update:build.all"],
 						"parallel": false
 					}
 				},
@@ -125,6 +125,49 @@
 					"outputs": ["dist/packages"],
 					"options": {
 						"commands": ["nx g @nativescript/plugin-tools:focus-packages inappbrowser"],
+						"parallel": false
+					}
+				}
+			}
+		},
+		"store-update": {
+			"root": "packages/store-update",
+			"sourceRoot": "packages/store-update",
+			"projectType": "library",
+			"schematics": {},
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/store-update",
+						"tsConfig": "packages/store-update/tsconfig.json",
+						"packageJson": "packages/store-update/package.json",
+						"main": "packages/store-update/index.ts",
+						"assets": [
+							"packages/store-update/*.md",
+							"packages/store-update/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/store-update/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx run store-update:build", "node tools/scripts/build-finish.ts store-update"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages store-update"],
 						"parallel": false
 					}
 				}

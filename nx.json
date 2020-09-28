@@ -25,6 +25,9 @@
 		},
 		"inappbrowser": {
 			"tags": []
+		},
+		"store-update": {
+			"tags": []
 		}
 	},
 	"workspaceLayout": {
