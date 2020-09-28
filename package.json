@@ -43,5 +43,6 @@
 		"**/*": [
 			"nx format:write --files"
 		]
-	}
+	},
+	"dependencies": {}
 }

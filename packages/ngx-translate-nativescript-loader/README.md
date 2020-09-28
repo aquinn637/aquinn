@@ -6,8 +6,10 @@ ns plugin add @aquinn/ngx-translate-nativescript-loader
 
 ## Usage
 
-// TODO
+This code was borrowed from https://github.com/danvick/ngx-translate-nativescript-loader
+For temporary use until the original author uses the new NS7 package workflow
 
 ## License
 
-Apache License Version 2.0
+This code was borrowed from https://github.com/danvick/ngx-translate-nativescript-loader
+For temporary use until the original author uses the new NS7 package workflow

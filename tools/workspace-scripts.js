@@ -91,6 +91,13 @@ module.exports = {
 					description: '@aquinn/urlhandler: Build',
 				},
 			},
+			// @aquinn/store-update
+			'store-update': {
+				build: {
+					script: 'nx run store-update:build.all',
+					description: '@aquinn/store-update: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -116,6 +123,10 @@ module.exports = {
 			urlhandler: {
 				script: 'nx run urlhandler:focus',
 				description: 'Focus on @aquinn/urlhandler',
+			},
+			'store-update': {
+				script: 'nx run store-update:focus',
+				description: 'Focus on @aquinn/store-update',
 			},
 			reset: {
 				script: 'nx run all:focus',
