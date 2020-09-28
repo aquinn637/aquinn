@@ -31,6 +31,9 @@
 		},
 		"ngx-translate-nativescript-loader": {
 			"tags": []
+		},
+		"urlhandler": {
+			"tags": []
 		}
 	},
 	"workspaceLayout": {

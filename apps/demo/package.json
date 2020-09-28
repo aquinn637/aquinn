@@ -8,7 +8,8 @@
 		"@nativescript/core": "file:../../node_modules/@nativescript/core",
 		"@aquinn/inappbrowser": "file:../../packages/inappbrowser",
 		"@aquinn/store-update": "file:../../packages/store-update",
-		"@aquinn/ngx-translate-nativescript-loader": "file:../../packages/ngx-translate-nativescript-loader"
+		"@aquinn/ngx-translate-nativescript-loader": "file:../../packages/ngx-translate-nativescript-loader",
+		"@aquinn/urlhandler": "file:../../packages/urlhandler"
 	},
 	"devDependencies": {
 		"@nativescript/android": "~7.0.0",

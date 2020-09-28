@@ -1,5 +1,5 @@
 import { DemoSharedBase } from '../utils';
-import {} from '@aquinn/ngx-translate-nativescript-loader';
+import { NativeScriptLoader } from '@aquinn/ngx-translate-nativescript-loader';
 
 export class DemoSharedNgxTranslateNativescriptLoader extends DemoSharedBase {
 	testIt() {

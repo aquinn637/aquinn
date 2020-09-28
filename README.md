@@ -8,6 +8,7 @@ npm start
 - @aquinn/inappbrowser
 - @aquinn/ngx-translate-nativescript-loader
 - @aquinn/store-update
+- @aquinn/urlhandler
 
 # How to use?
 

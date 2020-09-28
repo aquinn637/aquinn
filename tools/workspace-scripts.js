@@ -84,6 +84,13 @@ module.exports = {
 					description: '@aquinn/ngx-translate-nativescript-loader: Build',
 				},
 			},
+			// @aquinn/urlhandler
+			urlhandler: {
+				build: {
+					script: 'nx run urlhandler:build.all',
+					description: '@aquinn/urlhandler: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -105,6 +112,10 @@ module.exports = {
 			'ngx-translate-nativescript-loader': {
 				script: 'nx run ngx-translate-nativescript-loader:focus',
 				description: 'Focus on @aquinn/ngx-translate-nativescript-loader',
+			},
+			urlhandler: {
+				script: 'nx run urlhandler:focus',
+				description: 'Focus on @aquinn/urlhandler',
 			},
 			reset: {
 				script: 'nx run all:focus',

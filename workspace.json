@@ -73,7 +73,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx run inappbrowser:build.all", "nx run store-update:build.all", "nx run ngx-translate-nativescript-loader:build.all"],
+						"commands": ["nx run inappbrowser:build.all", "nx run store-update:build.all", "nx run ngx-translate-nativescript-loader:build.all", "nx run urlhandler:build.all"],
 						"parallel": false
 					}
 				},
@@ -211,6 +211,49 @@
 					"outputs": ["dist/packages"],
 					"options": {
 						"commands": ["nx g @nativescript/plugin-tools:focus-packages ngx-translate-nativescript-loader"],
+						"parallel": false
+					}
+				}
+			}
+		},
+		"urlhandler": {
+			"root": "packages/urlhandler",
+			"sourceRoot": "packages/urlhandler",
+			"projectType": "library",
+			"schematics": {},
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/urlhandler",
+						"tsConfig": "packages/urlhandler/tsconfig.json",
+						"packageJson": "packages/urlhandler/package.json",
+						"main": "packages/urlhandler/index.ts",
+						"assets": [
+							"packages/urlhandler/*.md",
+							"packages/urlhandler/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/urlhandler/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx run urlhandler:build", "node tools/scripts/build-finish.ts urlhandler"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages urlhandler"],
 						"parallel": false
 					}
 				}

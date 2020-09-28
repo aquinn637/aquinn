@@ -1,5 +1,5 @@
 {
-	"name": "@aquinn/ngx-translate-nativescript-loader",
+	"name": "@aquinn/urlhandler",
 	"version": "1.0.0",
 	"description": "Add a plugin description",
 	"main": "index",
@@ -22,8 +22,8 @@
 		"Android"
 	],
 	"author": {
-		"name": "Aubrey Quinn",
-		"email": "aquinn@softworks.com"
+		"name": "NativeScript",
+		"email": "oss@nativescript.org"
 	},
 	"bugs": {
 		"url": "https://github.com/NativeScript/plugins/issues"
@@ -31,11 +31,5 @@
 	"license": "Apache-2.0",
 	"homepage": "https://github.com/NativeScript/plugins",
 	"readmeFilename": "README.md",
-	"bootstrapper": "@nativescript/plugin-seed",
-	"peerDependencies": {
-		"@angular/core": "^10.1.3",
-		"@nativescript/core": "^7.0.7",
-		"@nativescript/types": "^7.0.4",
-		"@ngx-translate/core": "^13.0.0"
-	}
+	"bootstrapper": "@nativescript/plugin-seed"
 }

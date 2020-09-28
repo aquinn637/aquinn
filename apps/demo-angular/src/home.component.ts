@@ -15,5 +15,8 @@ export class HomeComponent {
 		{
 			name: 'store-update',
 		},
+		{
+			name: 'urlhandler',
+		},
 	];
 }
