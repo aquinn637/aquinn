@@ -1,8 +1,12 @@
 import { DemoSharedBase } from '../utils';
-import {} from '@aquinn/urlhandler';
+import { handleOpenURL, AppURL } from '@aquinn/urlhandler';
 
 export class DemoSharedUrlhandler extends DemoSharedBase {
 	testIt() {
-		console.log('test urlhandler!');
+        console.log('test urlhandler!');
+
+        handleOpenURL((appURL: AppURL) => {
+            console.log('Got the following appURL', appURL);
+        });
 	}
 }

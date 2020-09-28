@@ -1,3 +1,1 @@
-import { UrlhandlerCommon } from './common';
-
-export declare class Urlhandler extends UrlhandlerCommon {}
+export * from './urlhandler';
