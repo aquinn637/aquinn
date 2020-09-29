@@ -1,6 +1,5 @@
 import { DemoSharedBase } from '../utils';
 import InAppBrowser from '@aquinn/inappbrowser';
-import { Utils } from '@nativescript/core';
 
 export class DemoSharedInappbrowser extends DemoSharedBase {
 
